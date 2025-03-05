@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bucket List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 400px;
+            width: 100%;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 10px;
+            margin: 5px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color:black;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        input, .add-btn {
+            padding: 10px;
+            margin: 5px;
+            width: calc(50% - 15px);
+        }
+        .submit:hover{
+            background-color: red;
+        }
+        .add-btn:hover{
+            background-color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>My Bucket List</h1>
+    <div class="container">
+        <input type="text" id="newItem" placeholder="Add a new item...">
+        <button class="add-btn" onclick="addItem()">Add</button>
+        <div id="list"></div>
+        
+    </div>
+    
+    <script>
+        function addItem() {
+            let input = document.getElementById("newItem");
+            let text = input.value.trim();
+            if (text !== "") {
+                let list = document.getElementById("list");
+                let item = document.createElement("div");
+                item.className = "item";
+                item.innerHTML = `<span>${text}</span> <button class="submit" onclick="removeItem(this)">Remove</button>`;
+                list.appendChild(item);
+               
+               
+
+            }
+        }
+        function removeItem(button) {
+            button.parentElement.remove();
+        }
+    </script>
+</body>
+</html>
