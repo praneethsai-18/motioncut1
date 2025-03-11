@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(65, 63, 63);
+            
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 15px 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            
+         
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .cart-icon {
+            font-size: 20px;
+        }
+        .product-container {
+            display: flex;
+            padding: 20px;
+            background: white;
+            max-width: 900px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product-image img {
+            max-width: 180px;
+            border-radius: 10px;
+            padding-top: 20px;
+        }
+        .product-details {
+            margin-left: 2px;
+        }
+        .description {
+            font-size: 16px;
+            color: #555;
+        }
+        .price {
+            font-size: 24px;
+            color: #e60000;
+            font-weight: bold;
+        }
+        button {
+            background-color: #e60000;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #cc0000;
+        }
+        .additional-info {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+           
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            ☰
+
+            
+            
+            CRE<sup>x</sup>  STORE 🏏 
+            
+            </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#"> 🏠︎ Home</a></li>
+                <li><a href="#">🛍️ Shop</a></li>
+                <li><a href="#">🛈 About Us</a></li>
+                <li><a href="#">📞Contact</a></li>
+            </ul>
+        </nav>
+        
+ 
+ 
+        <div class="cart-icon">🛒 <span id="cart-count">0</span></div>
+    </header>
+
+    <main>
+        <section class="product-container">
+            <div class="product-image">
+                <img src="mrf genius bat.png" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h1>MRF BAT GENIUS EDITION</h1>
+                <p class="description">MRF cricket bats, known for their quality and performance, are crafted from premium English willow and feature models like the Virat Kohli Limited Edition, Grand Players Edition, and Genius series, often used by top cricketers</p>
+                <p class="price"> ₹40000</p>
+                <label for="quantity">Quantity:</label>
+                <select id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <select id="sizes">
+                    <option value="1">long handle</option>
+                    <option value="2">short handle</option>
+                    <option value="3">medium handle</option>
+                   
+                </select>
+                <br>
+                <button id="add-to-cart">Buy Now</button>
+                <button id="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section class="product-container">
+            <div class="product-image">
+                <img src="SS limited edition.jpeg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h1>SS NEW BLACK EDITION</h1>
+                <p class="description">SS bats, manufactured by Sareen Sports Industries, are known for their quality and are used by many international cricketers. They are known for their English Willow and Kashmir Willow bats, with models like SS TON, SS Gladiator, and SS Sword Pro</p>
+                <p class="price"> ₹24000</p>
+                <label for="quantity">Quantity:</label>
+                <select id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <select id="sizes">
+                    <option value="1">long handle</option>
+                    <option value="2">short handle</option>
+                    <option value="3">medium handle</option>
+                   
+                </select>
+                <br>
+                <button id="add-to-cart">Buy Now</button>
+                <button id="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        
+        <section class="product-container">
+            <div class="product-image">
+                <img src="kookaburra.jpeg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h1>KOOKABURRA</h1>
+                <p class="description">Kookaburra's big edge profile increases from the shoulders and maximises at the swell, generating supreme balance with an extended sweet spot that covers the entire width of the blade. Kookaburra's super spine profiles adopt traditional shaping characteristics and operate in unison with the edge profile of the bat.</p>
+                <p class="price"> ₹49999</p>
+                <label for="quantity">Quantity:</label>
+                <select id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <select id="sizes">
+                    <option value="1">long handle</option>
+                    <option value="2">short handle</option>
+                    <option value="3">medium handle</option>
+                   
+                </select>
+                <br>
+                <button id="add-to-cart">Buy Now</button>
+                <button id="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        
+        <section class="product-container">
+            <div class="product-image">
+                <img src="gerey nicolls.jpeg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h1>GRAY NICOLLS MAX <h1>
+                <p class="description">Gray-Nicolls is a renowned cricket equipment manufacturer, known for producing high-quality bats used by professional and amateur cricketers worldwide. Their bats are crafted using premium English willow, offering excellent balance, power, and durability.</p>
+                <p class="price"> ₹42999</p>
+                <label for="quantity">Quantity:</label>
+                <select id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <select id="sizes">
+                    <option value="1">long handle</option>
+                    <option value="2">short handle</option>
+                    <option value="3">medium handle</option>
+                   
+                </select>
+                <br>
+                <button id="add-to-cart">Buy Now</button>
+                <button id="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        
+        <section class="product-container">
+            <div class="product-image">
+                <img src="gm.jpeg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h1>GUNN & MOORE</h1>
+                <p class="description">Gunn & Moore (GM) is a leading cricket bat manufacturer, known for producing high-quality, durable bats with advanced technology and craftsmanship. GM bats are designed for professional and amateur cricketers, offering superior performance and reliability.</p>
+                <p class="price"> ₹29999</p>
+                <label for="quantity">Quantity:</label>
+                <select id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <select id="sizes">
+                    <option value="1">long handle</option>
+                    <option value="2">short handle</option>
+                    <option value="3">medium handle</option>
+                  
+                </select>
+                <br>
+                <button id="add-to-cart">Buy Now</button>
+                <button id="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        
+        <section class="product-container">
+            <div class="product-image">
+                <img src="sg.jpeg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h1>SG TRIPLE CROWNS </h1>
+                <p class="description">SG (Sanspareils Greenlands) is one of the most popular and trusted cricket bat manufacturers, known for producing high-quality bats used by international and domestic players. SG bats are handcrafted with premium English willow and designed to provide exceptional performance, durability, and comfort.</p>
+                <p class="price"> ₹39999</p>
+                <label for="quantity">Quantity:</label>
+                <select id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <select id="sizes">
+                    <option value="1">long handle</option>
+                    <option value="2">short handle</option>
+                    <option value="3">medium handle</option>
+                  
+                </select>
+                <br>
+                <button id="add-to-cart">Buy Now</button>
+                <button id="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        
+        <section class="product-container">
+            <div class="product-image">
+                <img src="nb.jpeg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h1>NEW BALANCE BLACK</h1>
+                <p class="description">New Balance (NB) is a globally renowned sports brand known for producing high-quality cricket bats designed for professional and aspiring cricketers. NB bats are engineered for power, balance, and precision, making them a popular choice among top international players.</p>
+                <p class="price"> ₹45999</p>
+                <label for="quantity">Quantity:</label>
+                <select id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <select id="sizes">
+                    <option value="1">long handle</option>
+                    <option value="2">short handle</option>
+                    <option value="3">medium handle</option>
+                
+                </select>
+                <br>
+                <button id="add-to-cart">Buy Now</button>
+                <button id="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        
+        <section class="product-container">
+            <div class="product-image">
+                <img src="dsc.jpeg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h1>DSC CRICKET BAT</h1>
+                <p class="description">DSC is a globally recognized cricket equipment brand known for manufacturing high-quality, performance-driven cricket bats. Designed for both professional and amateur players, DSC bats offer a perfect blend of power, balance, and durability, making them a popular choice among cricketers worldwide.</p>
+                <p class="price"> ₹23999</p>
+                <label for="quantity">Quantity:</label>
+                <select id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <select id="sizes">
+                    <option value="1">long handle</option>
+                    <option value="2">short handle</option>
+                    <option value="3">medium handle</option>
+                 
+                </select>
+                <br>
+                <button id="add-to-cart">Buy Now</button>
+                <button id="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        
+        <section class="product-container">
+            <div class="product-image">
+                <img src="spartan.jpeg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h1>SPARTAN SKANDARS</h1>
+                <p class="description">Spartan is a premium cricket bat brand known for its high-performance bats, trusted by international cricket stars like MS Dhoni, Chris Gayle, and Michael Clarke. Spartan bats are crafted for power hitters and stroke makers, offering an excellent balance between power and precision.</p>
+                <p class="price">₹19999</p>
+                <label for="quantity">Quantity:</label>
+                <select id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <select id="sizes">
+                    <option value="1">long handle</option>
+                    <option value="2">short handle</option>
+                    <option value="3">medium handle</option>
+                   
+                </select>
+                <br>
+                <button id="add-to-cart">Buy Now</button>s
+                <button id="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+       
+    </main>
+
+    <section class="additional-info">
+        <h2>Additional Information</h2>
+        <p><strong>Shipping:</strong> Free shipping on every item.</p>
+        <p><strong>Specifications:</strong> Available in multiple sizes and colors.</p>
+        <p><strong>Customer Reviews:</strong> Rated 4.5/5 by over 200 customers.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 CREX STORE . All rights reserved.</p>
+        <p>Cookies Policy <br>
+            Legal Terms<br> Privacy Policy
+            <br>
+        <p> ➜ connect : Instagram Facebook  </p>
+    </footer>
+
+    <script src="script.js">
+     
+    </script>
+</body>
+</html>
